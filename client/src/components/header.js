@@ -11,9 +11,7 @@ function header() {
             <IconButton>
                 <PersonIcon className='PersonIcon'/>
             </IconButton>
-            
             <WhatshotIcon className='TinderIcon' />
-            
             <IconButton>
                 <ChatBubbleOutlineIcon className='ChatIcon' />
             </IconButton>
