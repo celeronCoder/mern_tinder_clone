@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from  './components/header';
+import TinderCards from './components/tinderCards';
+
+// Helmet for document title
+import { Helmet } from 'react-helmet'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // BEM Class naming convention starting from small letter
+    <div className="app">
+      <Helmet>
+          <title>Tinder Clone</title>
+      </Helmet>
+      <Header />
+      {/* Tinder Card */}
+      <TinderCards />
+      {/* Swipe Buttons */}
     </div>
   );
 }
